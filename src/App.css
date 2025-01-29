@@ -1,0 +1,124 @@
+
+body[data-theme='dark'] {
+  background-color: #170027;
+  color: rgb(226, 95, 243);
+}
+body[data-theme='light'] {
+  background-color: rgb(226, 95, 243);
+  color: #170027;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: #3e006b;
+  color: rgb(226, 95, 243);
+}
+header nav a {
+  margin: 0 0.5rem;
+  text-decoration: none;
+  color: rgb(226, 95, 243);
+}
+header button {
+  padding: 0.5rem 1rem;
+}
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #3e006b;
+  color: rgb(226, 95, 243);
+}
+
+.home-container {
+  display: flex; /* Размещает элементы в строку */
+  align-items: center; /* Выравнивает по центру по вертикали */
+  justify-content: space-between; /* Раздвигает текст и фото */
+  padding: 20px;
+  max-width: 900px; /* Ограничение ширины контейнера */
+  margin: 0 auto; /* Центрирование страницы */
+}
+
+.text-content {
+  max-width: 50%; /* Ограничение ширины текста */
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.profile-image {
+  width: 200px; /* Фиксированная ширина */
+  height: 200px; /* Фиксированная высота */
+  object-fit: cover; /* Обрезка по размеру */
+  border-radius: 50%; /* Скругленные края */
+  margin-left: 20px; /* Отступ от текста */
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Контейнер для всего контента */
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* 100% высоты экрана */
+}
+
+/* Основной контент будет растягиваться, footer останется внизу */
+main {
+  flex: 1; /* Заполняет оставшееся пространство */
+  padding: 20px;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+  gap: 15px;
+}
+
+.input-field, .textarea-field {
+  width: 100%;
+  padding: 9px;
+  border: 1px solid #ffa9d5;
+  border-radius: 5px;
+  background: #51005c;
+  color: white;
+}
+
+.textarea-field {
+  height: 100px;
+  resize: none;
+}
+
+.submit-button {
+  padding: 10px;
+  background: #d000ff;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.submit-button:hover {
+  background: #ff56cc;
+}
+
+.success-message {
+  font-size: 18px;
+  color: #260047;
+}
