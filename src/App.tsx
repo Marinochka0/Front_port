@@ -54,7 +54,7 @@ const Home = () => (
       <div className="text-content">
         <h1>Всем Приветик)</h1>
         <p>
-          Меня зовут Марина и это мое портфолио)))
+          Меня зовут Шут Марина и это мое портфолио)))
         </p>
       </div>
       <img src='/src/assets/fotoM.jpg' alt="Profile" className="profile-image" />
